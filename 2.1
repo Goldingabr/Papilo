@@ -1,0 +1,19 @@
+using System;
+
+class Program {
+    static void Main() {
+        double R1, R2, R;
+
+        Console.Write("Введите величину первого сопротивления: ");
+        R1 = double.Parse(Console.ReadLine());
+
+        Console.Write("Введите величину второго сопротивления: ");
+        R2 = double.Parse(Console.ReadLine());
+
+        R = (R1 * R2) / (R1 + R2);
+
+        Console.WriteLine("Общее сопротивление электрической цепи равно: " + R);
+
+        Console.ReadKey();
+    }
+}
